@@ -1,0 +1,27 @@
+Session management in SQL Db (SQLALchemy)
+# Mail in flaks
+
+Session - staging for db operations
+
+session lifecycle:
+    create
+    add/update/delete objects
+    commit
+    flush
+    rollback/undo
+    close
+
+create - sessionmaker
+add objs - session.add()
+    delete - session.delete
+    ....
+
+session management
+ -handle lifecycle database operations
+
+ obj states:
+    transient - created but not added
+    pending - created and added but not in the db
+    persistent - update database 
+    deleted
+    detach
